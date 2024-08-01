@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "hack";
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/hack-regular-subset.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "hack";
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../webfonts/hack-italic-subset.woff2") format("woff2");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "hack", monospace;
+  font-weight: 400;
+  background-color: var(--oc-gray-3);
+  color: var(--oc-gray-5);
+}
+
+body {
+  font-size: 4vw;
+}
+
+main {
+  position: absolute;
+  width: 98%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 3vw;
+  }
+  main {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2vw;
+  }
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1.5vw;
+  }
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1vw;
+  }
+  main {
+    width: 60%;
+  }
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  font-style: normal;
+}
+
+a:hover, a:active {
+  color: var(--oc-gray-7);
+}
+
+.error, .value {
+  color: var(--oc-gray-6);
+  text-align: center;
+}
+
+.spacer {
+  height: 10px;
+}
+
+.mt {
+  margin-top: 1.5rem;
+  font-size: 0.8em;
+}
