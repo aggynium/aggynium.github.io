@@ -50,6 +50,14 @@ main {
   main {
     width: 90%;
   }
+  .button {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .button span:after {
+    left: -30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -58,6 +66,14 @@ main {
   }
   main {
     width: 80%;
+  }
+  .button {
+    font-size: 1.1em;
+    padding: 9px;
+  }
+
+  .button span:after {
+    left: -40px;
   }
 }
 
@@ -68,6 +84,14 @@ main {
   main {
     width: 70%;
   }
+  .button {
+    font-size: 1.15em;
+    padding: 10px;
+  }
+
+  .button span:after {
+    left: -45px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -76,6 +100,14 @@ main {
   }
   main {
     width: 60%;
+  }
+  .button {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .button span:after {
+    left: -50px;
   }
 }
 
@@ -113,10 +145,14 @@ a:hover, a:active {
   color: #e4e1e9;
   text-align: center;
   font-size: 1.2em;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   transition: all 0.5s;
   cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .button span {
